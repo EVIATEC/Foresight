@@ -13242,11 +13242,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Work\\Ohne TFS\\Platform\\Platform.Services.EventService\\Platform.Services.EventService.csproj",
+      "projectUniqueName": "C:\\Work\\Ohne TFS\\Platform\\Foresight\\Platform.Services.EventService\\Platform.Services.EventService.csproj",
       "projectName": "Platform.Services.EventService",
-      "projectPath": "C:\\Work\\Ohne TFS\\Platform\\Platform.Services.EventService\\Platform.Services.EventService.csproj",
+      "projectPath": "C:\\Work\\Ohne TFS\\Platform\\Foresight\\Platform.Services.EventService\\Platform.Services.EventService.csproj",
       "packagesPath": "C:\\Users\\EVIATEC\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\Ohne TFS\\Platform\\Platform.Services.EventService\\obj\\",
+      "outputPath": "C:\\Work\\Ohne TFS\\Platform\\Foresight\\Platform.Services.EventService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

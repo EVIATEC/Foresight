@@ -13242,11 +13242,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Work\\Ohne TFS\\Platform\\Platform.Api.System.AppManager\\Platform.Services.System.AppManager.csproj",
+      "projectUniqueName": "C:\\Work\\Ohne TFS\\Platform\\Foresight\\Platform.Api.System.AppManager\\Platform.Services.System.AppManager.csproj",
       "projectName": "Platform.Services.System.AppManager",
-      "projectPath": "C:\\Work\\Ohne TFS\\Platform\\Platform.Api.System.AppManager\\Platform.Services.System.AppManager.csproj",
+      "projectPath": "C:\\Work\\Ohne TFS\\Platform\\Foresight\\Platform.Api.System.AppManager\\Platform.Services.System.AppManager.csproj",
       "packagesPath": "C:\\Users\\EVIATEC\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\Ohne TFS\\Platform\\Platform.Api.System.AppManager\\obj\\",
+      "outputPath": "C:\\Work\\Ohne TFS\\Platform\\Foresight\\Platform.Api.System.AppManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
