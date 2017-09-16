@@ -1,0 +1,11 @@
+C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\obj\Debug\netcoreapp2.0\Platform.Services.System.AppManager.csprojResolveAssemblyReference.cache
+C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\obj\Debug\netcoreapp2.0\Platform.Services.System.AppManager.csproj.CoreCompileInputs.cache
+C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\obj\Debug\netcoreapp2.0\Platform.Services.System.AppManager.AssemblyInfoInputs.cache
+C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\obj\Debug\netcoreapp2.0\Platform.Services.System.AppManager.AssemblyInfo.cs
+C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\bin\Debug\netcoreapp2.0\Platform.Services.System.AppManager.deps.json
+C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\bin\Debug\netcoreapp2.0\Platform.Services.System.AppManager.runtimeconfig.json
+C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\bin\Debug\netcoreapp2.0\Platform.Services.System.AppManager.runtimeconfig.dev.json
+C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\bin\Debug\netcoreapp2.0\Platform.Services.System.AppManager.dll
+C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\bin\Debug\netcoreapp2.0\Platform.Services.System.AppManager.pdb
+C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\obj\Debug\netcoreapp2.0\Platform.Services.System.AppManager.dll
+C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\obj\Debug\netcoreapp2.0\Platform.Services.System.AppManager.pdb
