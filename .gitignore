@@ -1,2 +1,15 @@
+*.csproj.user
 Platform.Api.System.AppManager/obj/*
 Platform.Api.System.AppManager/bin/*
+Platform.ApiGateways.WebGateway/obj/*
+Platform.ApiGateways.WebGateway/bin/*
+Platform.Services.ContentService/obj/*
+Platform.Services.ContentService/bin/*
+Platform.Services.EventService/obj/*
+Platform.Services.EventService/bin/*
+Platform.Services.FormService/obj/*
+Platform.Services.FormService/bin/*
+Platform.Services.StorageService/obj/*
+Platform.Services.StorageService/bin/*
+Platform.Services.UserService/obj/*
+Platform.Services.UserService/bin/*
