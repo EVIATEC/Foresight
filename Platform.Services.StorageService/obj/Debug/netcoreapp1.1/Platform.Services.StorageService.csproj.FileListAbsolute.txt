@@ -1,9 +1,0 @@
-C:\Work\Ohne TFS\Platform\Platform.Services.StorageService\bin\Debug\netcoreapp1.1\Platform.Services.StorageService.deps.json
-C:\Work\Ohne TFS\Platform\Platform.Services.StorageService\bin\Debug\netcoreapp1.1\Platform.Services.StorageService.runtimeconfig.json
-C:\Work\Ohne TFS\Platform\Platform.Services.StorageService\bin\Debug\netcoreapp1.1\Platform.Services.StorageService.runtimeconfig.dev.json
-C:\Work\Ohne TFS\Platform\Platform.Services.StorageService\bin\Debug\netcoreapp1.1\Platform.Services.StorageService.dll
-C:\Work\Ohne TFS\Platform\Platform.Services.StorageService\bin\Debug\netcoreapp1.1\Platform.Services.StorageService.pdb
-C:\Work\Ohne TFS\Platform\Platform.Services.StorageService\obj\Debug\netcoreapp1.1\Platform.Services.StorageService.AssemblyInfo.cs
-C:\Work\Ohne TFS\Platform\Platform.Services.StorageService\obj\Debug\netcoreapp1.1\Platform.Services.StorageService.dll
-C:\Work\Ohne TFS\Platform\Platform.Services.StorageService\obj\Debug\netcoreapp1.1\Platform.Services.StorageService.pdb
-C:\Work\Ohne TFS\Platform\Platform.Services.StorageService\obj\Debug\netcoreapp1.1\Platform.Services.StorageService.csprojResolveAssemblyReference.cache
