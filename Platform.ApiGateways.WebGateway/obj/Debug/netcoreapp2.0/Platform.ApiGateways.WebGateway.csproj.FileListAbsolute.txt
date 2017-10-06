@@ -9,3 +9,14 @@ C:\Work\Ohne TFS\Platform\Platform.ApiGateways.WebGateway\bin\Debug\netcoreapp2.
 C:\Work\Ohne TFS\Platform\Platform.ApiGateways.WebGateway\obj\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.dll
 C:\Work\Ohne TFS\Platform\Platform.ApiGateways.WebGateway\obj\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.pdb
 C:\Work\Ohne TFS\Platform\Platform.ApiGateways.WebGateway\obj\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.csprojResolveAssemblyReference.cache
+C:\Work\GitHub\EVIATEC Foresight\Platform.ApiGateways.WebGateway\bin\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.deps.json
+C:\Work\GitHub\EVIATEC Foresight\Platform.ApiGateways.WebGateway\bin\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.runtimeconfig.json
+C:\Work\GitHub\EVIATEC Foresight\Platform.ApiGateways.WebGateway\bin\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.runtimeconfig.dev.json
+C:\Work\GitHub\EVIATEC Foresight\Platform.ApiGateways.WebGateway\bin\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.dll
+C:\Work\GitHub\EVIATEC Foresight\Platform.ApiGateways.WebGateway\bin\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.pdb
+C:\Work\GitHub\EVIATEC Foresight\Platform.ApiGateways.WebGateway\obj\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.csprojResolveAssemblyReference.cache
+C:\Work\GitHub\EVIATEC Foresight\Platform.ApiGateways.WebGateway\obj\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.csproj.CoreCompileInputs.cache
+C:\Work\GitHub\EVIATEC Foresight\Platform.ApiGateways.WebGateway\obj\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.AssemblyInfoInputs.cache
+C:\Work\GitHub\EVIATEC Foresight\Platform.ApiGateways.WebGateway\obj\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.AssemblyInfo.cs
+C:\Work\GitHub\EVIATEC Foresight\Platform.ApiGateways.WebGateway\obj\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.dll
+C:\Work\GitHub\EVIATEC Foresight\Platform.ApiGateways.WebGateway\obj\Debug\netcoreapp2.0\Platform.ApiGateways.WebGateway.pdb
