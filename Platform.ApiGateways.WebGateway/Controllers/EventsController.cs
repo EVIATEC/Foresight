@@ -10,7 +10,7 @@ namespace Platform.ApiGateways.WebGateway.Controllers
 {
     [Route("/api/[controller]")]
     [Route("/FrontendSystem/api/[controller]")]
-    [Authorize]
+//    [Authorize]
     public class EventsController : Controller
     {
         private readonly EventServiceConfiguration _eventSettings;
