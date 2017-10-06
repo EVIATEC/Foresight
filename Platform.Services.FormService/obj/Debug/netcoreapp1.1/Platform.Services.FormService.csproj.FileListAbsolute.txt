@@ -1,9 +1,0 @@
-C:\Work\Ohne TFS\Platform\Platform.Services.FormService\bin\Debug\netcoreapp1.1\Platform.Services.FormService.deps.json
-C:\Work\Ohne TFS\Platform\Platform.Services.FormService\bin\Debug\netcoreapp1.1\Platform.Services.FormService.runtimeconfig.json
-C:\Work\Ohne TFS\Platform\Platform.Services.FormService\bin\Debug\netcoreapp1.1\Platform.Services.FormService.runtimeconfig.dev.json
-C:\Work\Ohne TFS\Platform\Platform.Services.FormService\bin\Debug\netcoreapp1.1\Platform.Services.FormService.dll
-C:\Work\Ohne TFS\Platform\Platform.Services.FormService\obj\Debug\netcoreapp1.1\Platform.Services.FormService.csprojResolveAssemblyReference.cache
-C:\Work\Ohne TFS\Platform\Platform.Services.FormService\obj\Debug\netcoreapp1.1\Platform.Services.FormService.AssemblyInfo.cs
-C:\Work\Ohne TFS\Platform\Platform.Services.FormService\bin\Debug\netcoreapp1.1\Platform.Services.FormService.pdb
-C:\Work\Ohne TFS\Platform\Platform.Services.FormService\obj\Debug\netcoreapp1.1\Platform.Services.FormService.dll
-C:\Work\Ohne TFS\Platform\Platform.Services.FormService\obj\Debug\netcoreapp1.1\Platform.Services.FormService.pdb
