@@ -6,7 +6,7 @@
 
 
 # Visual Studio 2015 cache/options directory
-.vs/
+.vs/*
 
 *.csproj.user
 Platform.Api.System.AppManager/obj/*
