@@ -1,9 +1,0 @@
-C:\Work\Ohne TFS\Platform\Platform.Api.EventService\bin\Debug\netcoreapp1.1\Platform.Api.EventService.deps.json
-C:\Work\Ohne TFS\Platform\Platform.Api.EventService\bin\Debug\netcoreapp1.1\Platform.Api.EventService.runtimeconfig.json
-C:\Work\Ohne TFS\Platform\Platform.Api.EventService\bin\Debug\netcoreapp1.1\Platform.Api.EventService.runtimeconfig.dev.json
-C:\Work\Ohne TFS\Platform\Platform.Api.EventService\bin\Debug\netcoreapp1.1\Platform.Api.EventService.dll
-C:\Work\Ohne TFS\Platform\Platform.Api.EventService\bin\Debug\netcoreapp1.1\Platform.Api.EventService.pdb
-C:\Work\Ohne TFS\Platform\Platform.Api.EventService\obj\Debug\netcoreapp1.1\Platform.Api.EventService.csprojResolveAssemblyReference.cache
-C:\Work\Ohne TFS\Platform\Platform.Api.EventService\obj\Debug\netcoreapp1.1\Platform.Api.EventService.AssemblyInfo.cs
-C:\Work\Ohne TFS\Platform\Platform.Api.EventService\obj\Debug\netcoreapp1.1\Platform.Api.EventService.dll
-C:\Work\Ohne TFS\Platform\Platform.Api.EventService\obj\Debug\netcoreapp1.1\Platform.Api.EventService.pdb

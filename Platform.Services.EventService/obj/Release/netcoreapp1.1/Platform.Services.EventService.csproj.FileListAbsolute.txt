@@ -1,9 +1,0 @@
-C:\Work\Ohne TFS\Platform\Platform.Services.EventService\bin\Release\netcoreapp1.1\Platform.Services.EventService.deps.json
-C:\Work\Ohne TFS\Platform\Platform.Services.EventService\bin\Release\netcoreapp1.1\Platform.Services.EventService.runtimeconfig.json
-C:\Work\Ohne TFS\Platform\Platform.Services.EventService\bin\Release\netcoreapp1.1\Platform.Services.EventService.runtimeconfig.dev.json
-C:\Work\Ohne TFS\Platform\Platform.Services.EventService\bin\Release\netcoreapp1.1\Platform.Services.EventService.dll
-C:\Work\Ohne TFS\Platform\Platform.Services.EventService\bin\Release\netcoreapp1.1\Platform.Services.EventService.pdb
-C:\Work\Ohne TFS\Platform\Platform.Services.EventService\obj\Release\netcoreapp1.1\Platform.Services.EventService.csprojResolveAssemblyReference.cache
-C:\Work\Ohne TFS\Platform\Platform.Services.EventService\obj\Release\netcoreapp1.1\Platform.Services.EventService.AssemblyInfo.cs
-C:\Work\Ohne TFS\Platform\Platform.Services.EventService\obj\Release\netcoreapp1.1\Platform.Services.EventService.dll
-C:\Work\Ohne TFS\Platform\Platform.Services.EventService\obj\Release\netcoreapp1.1\Platform.Services.EventService.pdb
