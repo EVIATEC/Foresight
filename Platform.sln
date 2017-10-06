@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebClient", "WebClient", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Services.ContentService", "Platform.Services.ContentService\Platform.Services.ContentService.csproj", "{7B10CD0B-AEBE-4262-B80E-86362DDD9D12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.Services.UserService", "Platform.Services.UserService\Platform.Services.UserService.csproj", "{18A84D0F-2E7B-482E-8BC7-E96F1E6FEA96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Platform.Services.UserService", "Platform.Services.UserService\Platform.Services.UserService.csproj", "{18A84D0F-2E7B-482E-8BC7-E96F1E6FEA96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
