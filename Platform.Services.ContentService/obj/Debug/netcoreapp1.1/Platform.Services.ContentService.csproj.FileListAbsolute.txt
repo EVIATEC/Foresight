@@ -1,9 +1,0 @@
-C:\Work\Ohne TFS\Platform\Platform.Services.ContentService\bin\Debug\netcoreapp1.1\Platform.Services.ContentService.deps.json
-C:\Work\Ohne TFS\Platform\Platform.Services.ContentService\bin\Debug\netcoreapp1.1\Platform.Services.ContentService.runtimeconfig.json
-C:\Work\Ohne TFS\Platform\Platform.Services.ContentService\bin\Debug\netcoreapp1.1\Platform.Services.ContentService.runtimeconfig.dev.json
-C:\Work\Ohne TFS\Platform\Platform.Services.ContentService\bin\Debug\netcoreapp1.1\Platform.Services.ContentService.dll
-C:\Work\Ohne TFS\Platform\Platform.Services.ContentService\obj\Debug\netcoreapp1.1\Platform.Services.ContentService.AssemblyInfo.cs
-C:\Work\Ohne TFS\Platform\Platform.Services.ContentService\bin\Debug\netcoreapp1.1\Platform.Services.ContentService.pdb
-C:\Work\Ohne TFS\Platform\Platform.Services.ContentService\obj\Debug\netcoreapp1.1\Platform.Services.ContentService.dll
-C:\Work\Ohne TFS\Platform\Platform.Services.ContentService\obj\Debug\netcoreapp1.1\Platform.Services.ContentService.pdb
-C:\Work\Ohne TFS\Platform\Platform.Services.ContentService\obj\Debug\netcoreapp1.1\Platform.Services.ContentService.csprojResolveAssemblyReference.cache
