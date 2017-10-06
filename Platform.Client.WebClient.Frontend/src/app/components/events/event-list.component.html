@@ -1,0 +1,52 @@
+<h1>Veranstaltungen</h1>
+
+ <p-dataTable 
+              [value]="events" 
+              [rows]="20" 
+              [paginator]="true" 
+              [pageLinks]="5" 
+              [rowsPerPageOptions]="[10,20,30]" 
+              [responsive]="true" 
+              expandableRows="true"
+              (onRowExpand)="readDownload($event)"
+              #dt>
+
+    <p-column expander="true" styleClass="col-icon"   pTooltip="Enter your username" [style]="{'width':'40px'}"> 
+    </p-column>
+    <p-column field="eventDate" header="Datum">
+        <ng-template pTemplate="body" let-event="rowData">
+            {{ event.eventDate | date : 'dd.MM.yyyy - HH:mm' }} Uhr
+        </ng-template>
+    </p-column>
+
+
+    <p-column field="eventName" header="Veranstaltung"></p-column>
+    <p-column field="location" header="Ort"></p-column>
+
+    <p-column [style]="{'width':'105px'}"> 
+        <ng-template pTemplate="header">
+        </ng-template>
+        <ng-template pTemplate="body" let-event="rowData">
+
+            <button type="button" 
+                    class="btn btn-primary" 
+                    (click)="register(event.eventId)"
+                    >
+                Anmelden
+            </button>
+        </ng-template>
+    </p-column>
+     <ng-template let-event pTemplate="rowexpansion">
+         <div [innerHTML]="replaceLineBreak(event.descriptionLong)"></div>
+        <br />
+
+        <strong>Downloads</strong>
+
+        <ul>
+            <li *ngFor="let download of downloads">
+                <a href="#">{{ download.name }}</a>
+                <button class="ui-button-text-only" (click)="downloadFile(download)">ddd</button>
+            </li>
+        </ul>
+     </ng-template>
+</p-dataTable>

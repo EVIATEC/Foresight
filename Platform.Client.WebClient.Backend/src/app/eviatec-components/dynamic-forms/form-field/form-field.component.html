@@ -1,0 +1,92 @@
+﻿<div *ngIf="_config" [ngSwitch]="_config.inputType">
+    <div *ngSwitchCase="'input-text'">
+        <div>
+        <input-text placeholder="{{_config.display.placeholder}}" label="{{_config.display.label}}" [(ngModel)]="_config.data" name="text"></input-text>
+        </div>
+    </div>
+
+    <div *ngSwitchCase="'dropdown'">
+        <div>
+        <dropdown [config]="_config" [(ngModel)]="_config.data" name="text"></dropdown>
+        </div>
+    </div>
+
+    <div *ngSwitchCase="'number'">
+        <div>
+            <input-number placeholder="{{_config.display.placeholder}}" label="{{_config.display.label}}" [(ngModel)]="_config.data" name="text"></input-number>
+        </div>
+    </div>
+
+    <div *ngSwitchCase="'input-password'">
+        <div>
+            <input-password placeholder="{{_config.display.placeholder}}" label="{{_config.display.label}}" [(ngModel)]="_config.data" name="text"></input-password>
+        </div>
+    </div>
+
+
+    <div *ngSwitchCase="'button'">
+        <div>
+        <evia-button label="{{_config.display.label}}"></evia-button>
+        </div>
+    </div>
+
+    <div *ngSwitchCase="'evia-two-column'">
+
+        <div class="ui-grid-row">
+
+            <div class="ui-grid-col-6">
+            <ngx-dnd-container
+                dropZone="builder-target"
+                [model]="_config.columnLeft"
+                [removeOnSpill]="true"
+                [template]="template"
+                [droppableItemClass]="droppableItemClass"
+                (drag)="log($event)"
+                (over)="log($event)"
+                (out)="log($event)"
+                (remove)="log($event)">
+            </ngx-dnd-container>
+            </div>
+            <div class="ui-grid-col-6">
+            <ngx-dnd-container
+                dropZone="builder-target"
+                [model]="_config.columnRight"
+                [removeOnSpill]="true"
+                [template]="template"
+                [droppableItemClass]="droppableItemClass"
+                (drag)="log($event)"
+                (drop)="log($event)"
+                (over)="log($event)"
+                (out)="log($event)"
+                (remove)="log($event)">
+            </ngx-dnd-container>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div *ngSwitchCase="'section'">
+
+
+        <ngx-section class="shadow" [sectionTitle]="_config.name">
+            <ngx-dnd-container
+            dropZone="builder-target"
+            [model]="_config.children"
+            [removeOnSpill]="true"
+            [template]="template"
+            [droppableItemClass]="droppableItemClass"
+            (drag)="log($event)"
+            (drop)="log($event)"
+            (over)="log($event)"
+            (out)="log($event)"
+            (remove)="log($event)">
+            </ngx-dnd-container>
+        </ngx-section>
+    </div>
+
+    <div *ngSwitchDefault>
+        <div>Dieser Feld-Typ ist nicht definiert (form-field.component.html).</div>
+    </div>
+</div>
+

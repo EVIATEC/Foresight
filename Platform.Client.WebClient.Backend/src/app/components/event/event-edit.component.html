@@ -1,0 +1,148 @@
+﻿
+<p-breadcrumb [model]="breadItems"></p-breadcrumb>
+
+<h1>Veranstaltung bearbeiten</h1>
+
+<p-confirmDialog header="Confirmation" icon="fa fa-question-circle" width="425"></p-confirmDialog>
+<p-dialog header="Teilnehmer" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true">
+    <div class="ui-grid ui-grid-responsive ui-fluid" *ngIf="registration">
+
+        <div class="ui-grid-row">
+            <div class="ui-grid-col-8"><label for="registrationDate">Anmeldedatum</label></div>
+            <div class="ui-grid-col-12"><input type="text" class="form-control" [(ngModel)]="registration.registrationDate" name="registrationDate" required readonly></div>
+        </div>
+        <div class="ui-grid-row">
+            <div class="ui-grid-col-8"><label for="salutation">Anrede</label></div>
+            <div class="ui-grid-col-12"><input type="text" class="form-control" [(ngModel)]="registration.salutation" name="salutation" required readonly></div>
+        </div>
+        <div class="ui-grid-row">
+            <div class="ui-grid-col-8"><label for="salutation">Titel</label></div>
+            <div class="ui-grid-col-12"><input type="text" class="form-control" [(ngModel)]="registration.title" name="title" required readonly></div>
+        </div>
+        <div class="ui-grid-row">
+            <div class="ui-grid-col-8"><label for="firstName">Vorname</label></div>
+            <div class="ui-grid-col-12"><input type="text" class="form-control" [(ngModel)]="registration.firstName" name="firstName" required readonly></div>
+        </div>
+        <div class="ui-grid-row">
+            <div class="ui-grid-col-8"><label for="lastName">Nachname</label></div>
+            <div class="ui-grid-col-12"><input type="text" class="form-control" [(ngModel)]="registration.lastName" name="lastName" required readonly></div>
+        </div>
+        <div class="ui-grid-row">
+            <div class="ui-grid-col-8"><label for="eMail">E-Mail</label></div>
+            <div class="ui-grid-col-12"><input type="text" class="form-control" [(ngModel)]="registration.eMail" name="eMail" required readonly></div>
+        </div>
+        <div class="ui-grid-row">
+            <div class="ui-grid-col-8"><label for="street">Stra&szlig;e</label></div>
+            <div class="ui-grid-col-12"><input type="text" class="form-control" [(ngModel)]="registration.street" name="street" required readonly></div>
+        </div>
+        <div class="ui-grid-row">
+            <div class="ui-grid-col-8"><label for="zipCode">Postleitzahl</label></div>
+            <div class="ui-grid-col-12"><input type="text" class="form-control" [(ngModel)]="registration.zipcode" name="zipCode" required readonly></div>
+        </div>
+        <div class="ui-grid-row">
+            <div class="ui-grid-col-8"><label for="city">Ort</label></div>
+            <div class="ui-grid-col-12"><input type="text" class="form-control" [(ngModel)]="registration.city" name="city" required readonly></div>
+        </div>
+    </div>
+
+</p-dialog>
+<p-tabView>
+    <p-tabPanel header="Grunddaten" leftIcon="fa-calender">
+
+        <p *ngIf="!event"><em>Loading...</em></p>
+
+        <form *ngIf="event" (ngSubmit)="submit(form)">
+
+            <div class="form-group">
+                <label for="name">ID *</label>
+                <input type="text" class="form-control"
+                       [(ngModel)]="event.eventId" name="eventId" readonly required>
+            </div>
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" class="form-control"
+                       [(ngModel)]="event.eventName" name="eventName" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Veranstaltungsort *</label>
+                <input type="text" class="form-control"
+                       [(ngModel)]="event.location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Datum *</label>
+
+              <p-calendar [(ngModel)]="event.eventDate" dateFormat="dd.mm.yy" [locale]="de" hourFormat="24" showTime="showTime" name="eventDate"></p-calendar>
+
+            </div>
+            <div class="form-group">
+                <label for="name">Beschreibung (Kurz) *</label>
+                <input type="text" class="form-control"
+                       [(ngModel)]="event.descriptionShort" name="descriptionShort" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Beschreibung (Lang) *</label>
+
+              <p-editor [(ngModel)]="event.descriptionLong" [style]="{'height':'320px'}" name="event.descriptionLong" required>
+                <p-header>
+                  <div class="ql-formats">
+                    <button class="ql-bold"></button>
+                    <button class="ql-italic"></button>
+                    <button class="ql-underline"></button>
+                    <button class="ql-link"></button>
+                    <button class="ql-align"></button>
+                    <button class="ql-list"></button>
+                    <button class="ql-clean"></button>
+                  </div>
+                </p-header>
+              </p-editor>
+
+            </div>
+            <button type="submit"
+                    class="btn btn-primary">
+                Aktualisieren
+            </button>
+        </form>
+
+    </p-tabPanel>
+    <p-tabPanel header="Downloads">
+        <dropzone [config]="config"
+                    [message]="'<br />Klicken oder Datei hierauf ziehen um einen Download hinzuzuf&uuml;gen<br /><br />'"
+                    (error)="onUploadError($event)"
+                    (success)="onUploadSuccess($event)">
+        </dropzone>
+
+        <h3>verf&uuml;gbare Dateien</h3>
+        <p-dataTable [value]="downloads" [rows]="20" [paginator]="true" [pageLinks]="5" [rowsPerPageOptions]="[10,20,30]" [responsive]="true" selectionMode="single" #dt>
+            <p-column field="name" header="Bezeichnung" [sortable]="true" [filter]="true"></p-column>
+
+            <p-column [style]="{'width':'105px'}">
+                <ng-template pTemplate="header">
+                </ng-template>
+                <ng-template pTemplate="body" let-download="rowData">
+                    <button type="button" (click)="confirm(download.downloadId)"
+                            class="btn btn-primary">
+                        L&ouml;schen
+                    </button>
+                </ng-template>
+            </p-column>
+        </p-dataTable>
+
+    </p-tabPanel>
+
+    <p-tabPanel header="Anmeldungen">
+        <p-dataTable [value]="registrations" [rows]="20" [paginator]="true" [pageLinks]="5" [rowsPerPageOptions]="[10,20,30]" [responsive]="true" selectionMode="single" (onRowSelect)="onRowSelect($event)">
+            <p-column field="salutation" header="Anrede" [sortable]="true" [filter]="true"></p-column>
+            <p-column field="firstName" header="Vorname" [sortable]="true" [filter]="true"></p-column>
+            <p-column field="lastName" header="Nachname" [sortable]="true" [filter]="true"></p-column>
+
+            <p-column header="Datum"  header="Anmeldedatum" [sortable]="true" [filter]="true">
+              <ng-template pTemplate="body" let-registration="rowData">
+                {{ registration.registrationDate | date : 'dd.MM.yyyy - HH:mm' }} Uhr
+              </ng-template>
+            </p-column>
+        </p-dataTable>
+
+    </p-tabPanel>
+
+</p-tabView>
+

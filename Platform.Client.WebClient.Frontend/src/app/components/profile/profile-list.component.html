@@ -1,0 +1,27 @@
+<h1>Visitenkarten</h1>
+<div class="ui-grid ui-grid-responsive ui-fluid">
+<div class="d"  style="margin-bottom:30px;" *ngFor="let profile of _profiles;" >
+    <div class="ui-grid-row">
+        <div class="ui-grid-col-2" style="text-align: center;">
+            <img src="assets/images/profile.png" height="134" border="0" alt="" border="1" />
+        </div>
+        <div class="ui-grid-col-10">
+            <span style="font-weight: bold; font-size: 2em;">{{ profile.firstName}} {{profile.lastName}}</span><br />
+            <span style="font-weight: bold; font-size: 1.1em">{{ profile.jobTitle }}</span>
+            
+            <br /><br />
+            Telefon: {{ profile.phone }}<br />
+            Mobil: {{ profile.mobilePhone }}<br />
+            E-Mail: <a href="mailto:{{ profile.eMail }}">{{ profile.eMail }}</a>
+
+            <br /><br />
+            Raum: {{ profile.room }}<br />
+            Fachbereich: {{ profile.department }}<br />
+            Vorgesetzter: {{ profile.supervisor }}<br />
+            Tätigkeiten: {{ profile.occupation }}
+        </div>
+    </div>
+    <hr />
+</div>
+
+</div>

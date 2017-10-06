@@ -1,0 +1,54 @@
+﻿
+
+<div class="ui-grid ui-grid-responsive ui-fluid"  *ngIf="_configuration">
+
+
+
+  <div class="ui-g">
+
+    <div class="ui-grid-col-6">
+
+      <p-tabView>
+        <p-tabPanel header="Anzeige" leftIcon="fa-calender">
+          <form-field-container [(ngModel)]="_formFieldsDisplay" ></form-field-container>
+
+        </p-tabPanel>
+
+        <p-tabPanel header="Validation" leftIcon="fa-calender">
+
+          <form-field-container [(ngModel)]="_formFieldsValidation" ></form-field-container>
+
+        </p-tabPanel>
+
+        <p-tabPanel header="API" leftIcon="fa-calender">
+
+          <form-field-container [(ngModel)]="_formFieldsApi" ></form-field-container>
+
+        </p-tabPanel>
+
+      </p-tabView>
+
+    </div>
+    <div class="ui-grid-col-6">
+      <h2>Vorschau</h2>
+
+
+      <form-field [(config)]="this.activeElement"></form-field>
+
+    </div>
+  </div>
+
+  <div class="ui-g">
+    <div class="ui-grid-col-4">
+      <button pButton type="button" class="ui-button-success" label="Speichern" (click)="saveElement()"></button>
+    </div>
+
+    <div class="ui-grid-col-4">
+      <button pButton type="button" class="ui-button-warning" label="Abbrechen"></button>
+    </div>
+
+    <div class="ui-grid-col-4">
+      <button pButton type="button" class="ui-button-danger" label="Löschen" (click)="deleteElement(activeElement)"></button>
+    </div>
+  </div>
+</div>

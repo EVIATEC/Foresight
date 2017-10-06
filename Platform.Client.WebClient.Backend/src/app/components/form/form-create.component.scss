@@ -1,0 +1,57 @@
+.builder-source {
+  div.ngx-dnd-container {
+    background-color: white;
+  }
+
+  .ngx-dnd-container {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+    .ngx-dnd-item
+    {
+      background-color: #047bc0;
+      color: white;
+      border: 0px;
+      margin: 0px;
+      margin-top: 10px;
+    }
+
+    .ngx-dnd-item:hover, .ngx-dnd-item:active
+    {
+      background-color: #2492c0;
+    }
+
+
+  }
+
+}
+
+.builder-target  {
+  padding: 0px;
+
+  div.ngx-dnd-container {
+    padding-left: 20px;
+    margin: 0px;
+    background-color: white;
+  }
+
+  .ngx-dnd-container {
+    border: 0px;
+    padding-top: 0px;
+
+    .ngx-dnd-item
+    {
+      background-color: #ffffff;
+      color: #000000;
+      margin: 0px;
+      margin-top: 10px;
+      border: 1px dotted gray;
+    }
+
+  }
+}
+
+div.ngx-dnd-container.gu-empty{
+  padding-top: 10px;
+}

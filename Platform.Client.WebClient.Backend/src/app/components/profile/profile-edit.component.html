@@ -1,0 +1,60 @@
+﻿<h1>Profile bearbeiten</h1>
+
+<form (ngSubmit)="submit(form)" *ngIf="_profile">
+
+    <div class="form-group">
+        <label for="firstName">Vorname *</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="_profile.firstName" name="firstName" required>
+    </div>
+    <div class="form-group">
+        <label for="lastName">Nachname *</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="_profile.lastName" name="lastName" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Telefon *</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="_profile.phone" name="phone" required>
+    </div>
+    <div class="form-group">
+        <label for="lastName">Firmenhandy *</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="_profile.mobilePhone" name="mobilePhone" required>
+    </div>
+    <div class="form-group">
+        <label for="eMail">E-Mail *</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="_profile.eMail" name="eMail" required>
+    </div>
+    <div class="form-group">
+        <label for="room">Roum/ort *</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="_profile.room" name="room" required>
+    </div>
+    <div class="form-group">
+        <label for="department">Fachbereich *</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="_profile.department" name="department" required>
+    </div>
+    <div class="form-group">
+        <label for="jobTitle">Jobbezeichnung *</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="_profile.jobTitle" name="jobTitle" required>
+    </div>
+    <div class="form-group">
+        <label for="supervisor">Vorgesetzter *</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="_profile.supervisor" name="supervisor" required>
+    </div>
+    <div class="form-group">
+        <label for="occupation">Tätigkeiten *</label>
+        <input type="text" class="form-control"
+               [(ngModel)]="_profile.occupation" name="occupation" required>
+    </div>
+    
+    <button type="submit"
+            class="btn btn-primary">
+        Speichern
+    </button>
+</form>

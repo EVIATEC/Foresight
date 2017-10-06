@@ -1,0 +1,36 @@
+﻿<h1>Profile</h1>
+<p>
+    <button type="button" (click)="newProfile()" class="btn btn-primary">Neu</button>
+
+    <button type="button" (click)="readProfiles()" class="btn btn-primary">Aktualisieren</button>
+</p>
+
+<p-confirmDialog header="Confirmation" icon="fa fa-question-circle" width="425"></p-confirmDialog>
+
+
+Globale Suche <input #gb type="text" placeholder="Suchbegriff">
+<br /><br />
+<p-dataTable [value]="_profiles"
+             [globalFilter]="gb"
+             [rows]="20"
+             [paginator]="true"
+             [pageLinks]="5"
+             [rowsPerPageOptions]="[10,20,30]"
+             [responsive]="true"
+             selectionMode="single"
+             (onRowSelect)="onRowSelect($event)" #dt>
+
+  <p-column field="firstName" header="Vorname" [sortable]="true" [filter]="true"></p-column>
+  <p-column field="lastName" header="Nachname" [sortable]="true" [filter]="true"></p-column>
+
+  <p-column [style]="{'width':'105px'}">
+    <ng-template pTemplate="header">
+    </ng-template>
+    <ng-template pTemplate="body" let-profile="rowData">
+      <button type="button" (click)="confirm(profile.profileId)"
+              class="btn btn-primary">
+        L&ouml;schen
+      </button>
+    </ng-template>
+  </p-column>
+</p-dataTable>

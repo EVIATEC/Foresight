@@ -1,0 +1,187 @@
+﻿<h1>Seiten-Generator</h1>
+
+<div *ngIf="_page">
+  <div class="ui-grid-row">
+    <div class="ui-grid-col-4">
+      <input-text [(ngModel)]="_page.pageName" name="name" label="Name"></input-text>
+    </div>
+
+    <div class="ui-grid-col-2">
+      <button pButton type="button" class="ui-button-success" label="Speichern" (click)="saveForm()"></button>
+
+      <button pButton type="button" class="ui-button-danger" label="Abbrechen"></button>
+    </div>
+  </div>
+
+  <hr />
+
+  
+  <div fxLayout="row" fxLayoutWrap="nowrap" fxFill>
+    
+    <div class="builder-source" fxFlex="20%">
+      <ngx-dnd-container
+        class="root-container"
+        [model]="sourceBuilderTools"
+        [dropZones]="['builder-target']"
+        [copy]="true"
+        [droppableItemClass]="droppableItemClass"
+        (drag)="builderDrag($event)">
+
+        <ng-template let-item="model">
+          <ngx-icon [fontIcon]="item.icon"></ngx-icon>
+          {{item.name}}
+        </ng-template>
+      </ngx-dnd-container>
+
+    </div>
+
+    <div class="builder-target" fxFlex="80%">
+      
+      <ngx-dnd-container
+        class="root-container"
+        [model]="targetBuilderTools"
+        dropZone="builder-target"
+        [removeOnSpill]="false"
+        [droppableItemClass]="droppableItemClass"
+        (drag)="log($event)"
+        (drop)="elementDrop($event)"
+        (over)="log($event)"
+        (out)="log($event)"
+        (remove)="log($event)" 
+      >
+
+        <ng-template let-i="index"
+          let-model="model">
+          
+          <!--<dynamic-field [(ngModel)]="targetBuilderTools[i]"></dynamic-field>-->
+
+
+         <div [ngSwitch]="model.inputType">
+            <div *ngSwitchCase="'input-text'">
+              <div style="float:right;">
+                <button pButton type="button" label="K" (click)="configureElement(model);" ></button>
+                <button pButton type="button" label="D" (click)="deleteElement(model);"  class="ui-button-danger"></button>
+              </div>
+              <div>
+                <input-text placeholder="{{model.display.placeholder}}" label="{{model.display.label}}" [(ngModel)]="model.data" name="text"></input-text>
+              </div>
+            </div>
+            
+            <div *ngSwitchCase="'static-text'">
+              <div style="float:right;">
+                <button pButton type="button" label="K" (click)="configureElement(model);" ></button>
+                <button pButton type="button" label="D" (click)="deleteElement(model);"  class="ui-button-danger"></button>
+              </div>
+              <div>
+                <static-text [(ngModel)]="model.display.label" name="text"></static-text>
+              </div>
+            </div>
+
+           <div *ngSwitchCase="'dropdown'">
+             <div style="float:right;">
+               <button pButton type="button" label="K" (click)="configureElement(model);" ></button>
+               <button pButton type="button" label="D" (click)="deleteElement(model);"  class="ui-button-danger"></button>
+             </div>
+             <div>
+               <dropdown  [(ngModel)]="model.data" name="text"></dropdown>
+             </div>
+           </div>
+
+           <div *ngSwitchCase="'button'">
+             <div style="float:right;">
+               <button pButton type="button" label="K" (click)="configureElement(model);" ></button>
+               <button pButton type="button" label="D" (click)="deleteElement(model);"  class="ui-button-danger"></button>
+             </div>
+             <div>
+               <evia-button label=""></evia-button>
+             </div>
+           </div>
+
+           <div *ngSwitchCase="'evia-two-column'">
+
+               <div class="ui-grid-row">
+
+                 <div class="ui-grid-col-6">
+                   <ngx-dnd-container
+                     dropZone="builder-target"
+                     [model]="model.columnLeft"
+                     [removeOnSpill]="true"
+                     [template]="template"
+                     [droppableItemClass]="droppableItemClass"
+                     (drag)="log($event)"
+                     (over)="log($event)"
+                     (out)="log($event)"
+                     (remove)="log($event)">
+                   </ngx-dnd-container>
+                 </div>
+                 <div class="ui-grid-col-6">
+                   <ngx-dnd-container
+                     dropZone="builder-target"
+                     [model]="model.columnRight"
+                     [removeOnSpill]="true"
+                     [template]="template"
+                     [droppableItemClass]="droppableItemClass"
+                     (drag)="log($event)"
+                     (drop)="log($event)"
+                     (over)="log($event)"
+                     (out)="log($event)"
+                     (remove)="log($event)">
+                   </ngx-dnd-container>
+                 </div>
+               </div>
+           </div>
+
+           <div *ngSwitchCase="'section'">
+
+
+                <ngx-section class="shadow" [sectionTitle]="model.name">
+                  <ngx-dnd-container
+                    dropZone="builder-target"
+                    [model]="model.children"
+                    [removeOnSpill]="true"
+                    [template]="template"
+                    [droppableItemClass]="droppableItemClass"
+                    (drag)="log($event)"
+                    (drop)="log($event)"
+                    (over)="log($event)"
+                    (out)="log($event)"
+                    (remove)="log($event)">
+                  </ngx-dnd-container>
+                </ngx-section>
+
+
+              </div>
+
+              <div *ngSwitchDefault>
+
+                <ngx-input
+                  [type]="model.inputType"
+                  [hint]="model.name"
+                  [autofocus]="false"
+                  [ngModel]="model.data"
+                  (drop)="elementDrop($event)"
+                >
+                </ngx-input>
+
+              </div>
+            </div>
+
+       </ng-template>
+     </ngx-dnd-container>
+   </div>
+</div>
+
+
+  <div>
+    <h3>Model</h3>
+    <pre><code>{{targetBuilderTools | json}}</code></pre>
+  </div>
+</div>
+
+
+
+<p-dialog header="{{activeElement.inputType}} Konfiguration" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true" width="1024">
+
+  <form-field-configuration #configuration [(ngModel)]="activeElement" (delete)="configurationDelete($event);" (afterSave)="configurationAfterSave($event)"></form-field-configuration>
+
+</p-dialog>

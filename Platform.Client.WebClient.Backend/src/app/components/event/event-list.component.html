@@ -1,0 +1,43 @@
+﻿<h1>Veranstaltungen</h1>
+<p>
+    <button type="button" (click)="newEvent()" class="btn btn-primary">Neu</button>
+
+    <button type="button" (click)="readEvents()" class="btn btn-primary">Aktualisieren</button>
+</p>
+
+<p-confirmDialog header="Confirmation" icon="fa fa-question-circle" width="425"></p-confirmDialog>
+
+
+Globale Suche <input #gb type="text" placeholder="Suchbegriff">
+<br /><br />
+<p-dataTable [value]="events" 
+             [globalFilter]="gb" 
+             [rows]="20" 
+             [paginator]="true" 
+             [pageLinks]="5"
+             [rowsPerPageOptions]="[10,20,30]" 
+             [responsive]="true" 
+             selectionMode="single" 
+             (onRowSelect)="onRowSelect($event)" #dt>
+
+
+    <p-column header="Datum" [sortable]="true" [filter]="true">
+        <ng-template pTemplate="body" let-event="rowData">
+            {{ event.eventDate | date : 'dd.MM.yyyy - HH:mm' }} Uhr
+        </ng-template>
+    </p-column>
+
+    <p-column field="eventName" header="Veranstaltung" [sortable]="true" [filter]="true"></p-column>
+    <p-column field="location" header="Ort" [sortable]="true" [filter]="true"></p-column>
+
+    <p-column [style]="{'width':'105px'}">
+        <ng-template pTemplate="header">
+        </ng-template>
+        <ng-template pTemplate="body" let-event="rowData">
+            <button type="button" (click)="confirm(event.eventId)"
+                    class="btn btn-primary">
+                L&ouml;schen
+            </button>
+        </ng-template>
+    </p-column>
+</p-dataTable>

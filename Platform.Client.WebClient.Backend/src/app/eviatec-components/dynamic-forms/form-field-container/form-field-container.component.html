@@ -1,0 +1,28 @@
+﻿
+<div [ngSwitch]="_dataMode">
+    <div *ngSwitchCase='1'>
+
+        <form *ngIf="_form" (ngSubmit)="submit(form)">
+            Name: {{_form.formName}}<br />
+            Api-Url: {{_form.apiUrl}}
+            <br /><br />
+            
+            <div *ngFor="let field of _formFields;">    
+                <form-field [config]="field"></form-field>
+            </div>
+            
+            <br /><br />
+            <button type="submit"
+                    class="btn btn-primary">
+                Speichern
+            </button> 
+        </form>
+    </div>
+
+    <div *ngSwitchCase='2'>
+        <div *ngFor="let field of _formFields;">    
+            <form-field [config]="field"></form-field>
+        </div>
+    </div>
+</div>
+ 

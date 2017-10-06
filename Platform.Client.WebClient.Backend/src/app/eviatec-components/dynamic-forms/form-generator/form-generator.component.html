@@ -1,0 +1,49 @@
+﻿<div fxLayout="row" fxLayoutWrap="nowrap" fxFill>
+    
+    <div class="builder-source" fxFlex="20%">
+      <ngx-dnd-container
+        class="root-container"
+        [model]="sourceBuilderTools"
+        [dropZones]="['builder-target']"
+        [copy]="true"
+        [droppableItemClass]="droppableItemClass"
+        (drag)="builderDrag($event)">
+
+        <ng-template let-item="model">
+          <ngx-icon [fontIcon]="item.icon"></ngx-icon>
+          {{item.name}}
+        </ng-template>
+      </ngx-dnd-container>
+
+    </div>
+
+    <div class="builder-target" fxFlex="80%">
+      <ngx-dnd-container
+          class="root-container"
+          [model]="targetBuilderTools"
+          dropZone="builder-target"
+          [removeOnSpill]="false"
+          [droppableItemClass]="droppableItemClass"
+          (drag)="log($event)"
+          (drop)="elementDrop($event)"
+          (over)="log($event)"
+          (out)="log($event)"
+          (remove)="log($event)">
+
+          <ng-template
+              let-myModel="model">
+              
+              <div style="float:right;">
+              <button pButton type="button" label="K" (click)="configureElement(myModel);" ></button>
+              <button pButton type="button" label="D" (click)="deleteElement(myModel);"  class="ui-button-danger"></button>
+              </div>
+              <form-field [config]="myModel"></form-field>
+          </ng-template>
+      </ngx-dnd-container>
+
+   </div>
+</div>
+
+<p-dialog header="{{activeElement.inputType}} Konfiguration" [(visible)]="displayDialog" [responsive]="true" showEffect="fade" [modal]="true" width="1024">
+  <form-field-configuration #configuration [(ngModel)]="activeElement" (delete)="configurationDelete($event);" (afterSave)="configurationAfterSave($event)"></form-field-configuration>
+</p-dialog>

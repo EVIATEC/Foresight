@@ -1,0 +1,18 @@
+﻿<div class="form-group ui-grid-row"
+           [formGroup]="group">
+
+  <label>{{ config.display.label }}</label>
+  <label [hidden]="!config.validation.required">*</label>
+
+
+  <input type="text"
+         [attr.placeholder]="config.display.placeholder"
+         [formControlName]="config.name"
+         [ngModel]="config.data.defaultValue" style="width: 100%"
+         (input)="inputChanged()"
+         class="form-control">
+
+  <div *ngIf="showValidation" style="color: red; padding-left: 5px;">
+    {{ config.display.label }} ist ein Pflichtfeld
+  </div>
+</div>
