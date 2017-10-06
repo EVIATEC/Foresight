@@ -12605,11 +12605,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Work\\Ohne TFS\\Platform\\Foresight\\Platform.Services.StorageService\\Platform.Services.StorageService.csproj",
+      "projectUniqueName": "C:\\Work\\GitHub\\EVIATEC Foresight\\Platform.Services.StorageService\\Platform.Services.StorageService.csproj",
       "projectName": "Platform.Services.StorageService",
-      "projectPath": "C:\\Work\\Ohne TFS\\Platform\\Foresight\\Platform.Services.StorageService\\Platform.Services.StorageService.csproj",
+      "projectPath": "C:\\Work\\GitHub\\EVIATEC Foresight\\Platform.Services.StorageService\\Platform.Services.StorageService.csproj",
       "packagesPath": "C:\\Users\\EVIATEC\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\Ohne TFS\\Platform\\Foresight\\Platform.Services.StorageService\\obj\\",
+      "outputPath": "C:\\Work\\GitHub\\EVIATEC Foresight\\Platform.Services.StorageService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

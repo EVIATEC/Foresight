@@ -1,9 +1,0 @@
-C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\bin\Release\netcoreapp1.1\Platform.Api.System.AppManager.deps.json
-C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\bin\Release\netcoreapp1.1\Platform.Api.System.AppManager.runtimeconfig.json
-C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\bin\Release\netcoreapp1.1\Platform.Api.System.AppManager.runtimeconfig.dev.json
-C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\bin\Release\netcoreapp1.1\Platform.Api.System.AppManager.dll
-C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\bin\Release\netcoreapp1.1\Platform.Api.System.AppManager.pdb
-C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\obj\Release\netcoreapp1.1\Platform.Api.System.AppManager.AssemblyInfo.cs
-C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\obj\Release\netcoreapp1.1\Platform.Api.System.AppManager.dll
-C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\obj\Release\netcoreapp1.1\Platform.Api.System.AppManager.pdb
-C:\Work\Ohne TFS\Platform\Platform.Api.System.AppManager\obj\Release\netcoreapp1.1\Platform.Api.System.AppManager.csprojResolveAssemblyReference.cache

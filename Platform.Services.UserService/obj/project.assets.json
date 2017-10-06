@@ -12542,11 +12542,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Work\\Ohne TFS\\Platform\\Foresight\\Platform.Services.UserService\\Platform.Services.UserService.csproj",
+      "projectUniqueName": "C:\\Work\\GitHub\\EVIATEC Foresight\\Platform.Services.UserService\\Platform.Services.UserService.csproj",
       "projectName": "Platform.Services.UserService",
-      "projectPath": "C:\\Work\\Ohne TFS\\Platform\\Foresight\\Platform.Services.UserService\\Platform.Services.UserService.csproj",
+      "projectPath": "C:\\Work\\GitHub\\EVIATEC Foresight\\Platform.Services.UserService\\Platform.Services.UserService.csproj",
       "packagesPath": "C:\\Users\\EVIATEC\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\Ohne TFS\\Platform\\Foresight\\Platform.Services.UserService\\obj\\",
+      "outputPath": "C:\\Work\\GitHub\\EVIATEC Foresight\\Platform.Services.UserService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

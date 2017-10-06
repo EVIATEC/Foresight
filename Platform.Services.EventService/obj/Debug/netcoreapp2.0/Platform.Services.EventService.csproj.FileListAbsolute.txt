@@ -9,3 +9,14 @@ C:\Work\Ohne TFS\Platform\Platform.Services.EventService\bin\Debug\netcoreapp2.0
 C:\Work\Ohne TFS\Platform\Platform.Services.EventService\obj\Debug\netcoreapp2.0\Platform.Services.EventService.dll
 C:\Work\Ohne TFS\Platform\Platform.Services.EventService\obj\Debug\netcoreapp2.0\Platform.Services.EventService.pdb
 C:\Work\Ohne TFS\Platform\Platform.Services.EventService\obj\Debug\netcoreapp2.0\Platform.Services.EventService.csprojResolveAssemblyReference.cache
+C:\Work\GitHub\EVIATEC Foresight\Platform.Services.EventService\bin\Debug\netcoreapp2.0\Platform.Services.EventService.deps.json
+C:\Work\GitHub\EVIATEC Foresight\Platform.Services.EventService\bin\Debug\netcoreapp2.0\Platform.Services.EventService.runtimeconfig.json
+C:\Work\GitHub\EVIATEC Foresight\Platform.Services.EventService\bin\Debug\netcoreapp2.0\Platform.Services.EventService.runtimeconfig.dev.json
+C:\Work\GitHub\EVIATEC Foresight\Platform.Services.EventService\bin\Debug\netcoreapp2.0\Platform.Services.EventService.dll
+C:\Work\GitHub\EVIATEC Foresight\Platform.Services.EventService\bin\Debug\netcoreapp2.0\Platform.Services.EventService.pdb
+C:\Work\GitHub\EVIATEC Foresight\Platform.Services.EventService\obj\Debug\netcoreapp2.0\Platform.Services.EventService.csprojResolveAssemblyReference.cache
+C:\Work\GitHub\EVIATEC Foresight\Platform.Services.EventService\obj\Debug\netcoreapp2.0\Platform.Services.EventService.csproj.CoreCompileInputs.cache
+C:\Work\GitHub\EVIATEC Foresight\Platform.Services.EventService\obj\Debug\netcoreapp2.0\Platform.Services.EventService.AssemblyInfoInputs.cache
+C:\Work\GitHub\EVIATEC Foresight\Platform.Services.EventService\obj\Debug\netcoreapp2.0\Platform.Services.EventService.AssemblyInfo.cs
+C:\Work\GitHub\EVIATEC Foresight\Platform.Services.EventService\obj\Debug\netcoreapp2.0\Platform.Services.EventService.dll
+C:\Work\GitHub\EVIATEC Foresight\Platform.Services.EventService\obj\Debug\netcoreapp2.0\Platform.Services.EventService.pdb
