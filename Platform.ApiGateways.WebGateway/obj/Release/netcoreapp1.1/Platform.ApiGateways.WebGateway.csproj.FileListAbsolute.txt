@@ -1,9 +1,0 @@
-C:\Work\Ohne TFS\Platform\Platform.ApiGateways.WebGateway\bin\Release\netcoreapp1.1\Platform.ApiGateways.WebGateway.deps.json
-C:\Work\Ohne TFS\Platform\Platform.ApiGateways.WebGateway\bin\Release\netcoreapp1.1\Platform.ApiGateways.WebGateway.runtimeconfig.json
-C:\Work\Ohne TFS\Platform\Platform.ApiGateways.WebGateway\bin\Release\netcoreapp1.1\Platform.ApiGateways.WebGateway.runtimeconfig.dev.json
-C:\Work\Ohne TFS\Platform\Platform.ApiGateways.WebGateway\bin\Release\netcoreapp1.1\Platform.ApiGateways.WebGateway.dll
-C:\Work\Ohne TFS\Platform\Platform.ApiGateways.WebGateway\bin\Release\netcoreapp1.1\Platform.ApiGateways.WebGateway.pdb
-C:\Work\Ohne TFS\Platform\Platform.ApiGateways.WebGateway\obj\Release\netcoreapp1.1\Platform.ApiGateways.WebGateway.csprojResolveAssemblyReference.cache
-C:\Work\Ohne TFS\Platform\Platform.ApiGateways.WebGateway\obj\Release\netcoreapp1.1\Platform.ApiGateways.WebGateway.AssemblyInfo.cs
-C:\Work\Ohne TFS\Platform\Platform.ApiGateways.WebGateway\obj\Release\netcoreapp1.1\Platform.ApiGateways.WebGateway.dll
-C:\Work\Ohne TFS\Platform\Platform.ApiGateways.WebGateway\obj\Release\netcoreapp1.1\Platform.ApiGateways.WebGateway.pdb
