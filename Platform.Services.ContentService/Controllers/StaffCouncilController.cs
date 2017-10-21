@@ -1,25 +1,25 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.IO;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace Platform.Services.ContentService.Controllers
 {
     [Produces("application/json")]
     [Route("api/[controller]")]
-    public class ImprovementProposalsController : Controller
+    public class StaffCouncilController : Controller
     {
         private string _EOMInputPath;
 
-        public ImprovementProposalsController(IOptions<ServiceSettings> settings)
+        public StaffCouncilController(IOptions<ServiceSettings> settings)
         {
-            this._EOMInputPath = settings.Value.EOMInputPath + "\\" + settings.Value.EOMFolderImprovement;
+            this._EOMInputPath = settings.Value.EOMInputPath + "\\" + settings.Value.EOMFolderStaffCouncil;
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostImprovementProposal([FromBody] ContentService.Models.ImprovementProposal @improvementProposal)
+        public async Task<IActionResult> PostFeedback([FromBody] ContentService.Models.StaffCouncil @staffcouncil)
         {
             if (!ModelState.IsValid)
             {
@@ -30,11 +30,11 @@ namespace Platform.Services.ContentService.Controllers
             using (StreamWriter writer = System.IO.File.AppendText(_EOMInputPath + "\\" + Guid.NewGuid().ToString() + ".txt"))
             {
                 var serializer = JsonSerializer.Create();
-                serializer.Serialize(writer, @improvementProposal);
+                serializer.Serialize(writer, @staffcouncil);
                 writer.Close();
             }
 
-            return AcceptedAtAction("PostImprovementProposal");
-        }        
+            return AcceptedAtAction("PostFeedback");
+        }
     }
 }

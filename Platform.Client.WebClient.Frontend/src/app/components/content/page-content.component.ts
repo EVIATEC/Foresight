@@ -11,7 +11,7 @@ import { environment } from 'environments/environment';
 
 export class PageContentComponent implements OnInit {
 
-  private _page : Page;
+  public _page : Page;
     
   constructor(private _http: Http, 
               private _router: Router,

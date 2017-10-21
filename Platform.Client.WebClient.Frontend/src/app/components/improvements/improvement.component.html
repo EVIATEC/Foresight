@@ -1,30 +1,142 @@
-<div style="padding: 5px;">
-    <h1>Verbesserungsvorschlag</h1>
-    Nachfolgend können Sie uns ihren Verbesserungsvorschlag mitteilen.
-    <br /><br />
-    <form>
-        <div class="form-group">
-            <label for="employeeName">Name</label>
-            <input type="text" class="form-control" name="employeeName" />
-        </div>
-        <div class="form-group">
-            <label for="topic">Thema</label>
-            <input type="text" class="form-control" name="topic" />
-        </div>
-        <div class="form-group">
-            <label for="process">Prozess</label>
-            <input type="text" class="form-control" name="process" />
-        </div>
-        <div  class="form-group">
-            <label for="comment">Beschreibung</label><br/>
-            <textarea name="comment" id="comment" rows="10" style="width: 100%;"></textarea>
-        </div>
-        <div  class="form-group">
-            <label for="improvement">Verbesserungsvorschlag</label><br/>
-            <textarea name="improvement" id="improvement" rows="10" style="width: 100%;"></textarea>
-        </div>
-        <div class="form-group">    
-            <button type="submit">Absenden</button>
-        </div>
+<div id="inhalt" style="font-family: 'Open Sans', sans-serif; width:600px; margin:0px;">
+    <form #thisForm="ngForm" (ngSubmit)="onSubmit(thisForm)">
+
+        <table border="0" style="width:550px;">
+            <tr>
+                <td colspan="4"><b>Mein Vorschlag betrifft</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="topic_Arbeitsplatz" id="topic_Arbeitsplatz" ngModel> Arbeitsplatz/-Ablauf
+                </td>
+                <td colspan="2">
+                    <input type="checkbox" name="topic_Unfallschutz" id="topic_Unfallschutz" ngModel> Unfall- und Gesundheitsschutz
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="topic_Werkstoffe" id="topic_Werkstoffe" ngModel> Werkstoffe</td>
+                <td colspan="2"><input type="checkbox" name="topic_Energie" id="topic_Energie" ngModel> Energie</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="topic_Betriebsmittel" id="topic_Betriebsmittel" ngModel> Betriebsmittel (Maschinen, KFZ, usw.)</td>
+                <td colspan="2"><input type="checkbox" name="topic_Verwaltung" id="topic_Verwaltung" ngModel> Verwaltung/Organisation</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="topic_Verpackung" id="topic_Verpackung" ngModel> Verpackung, Lagerung, Transport</td>
+                <td><input type="checkbox" name="topic_Sonstiges" id="topic_Sonstiges" ngModel> Sonstiges</td>
+                <td><input type="text" name="topic_text" id="topic_text" ngModel></td>
+            </tr>
+            <tr>
+                <td colspan="4">&nbsp;</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="width:80px;"><b>Datum</b></td>
+                <td><input type="text" name="date" id="date" ngModel></td>
+                <td><b>Name</b></td>
+                <td><input type="text" name="name" id="name" ngModel></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td><b>Abteilung</b></td>
+                <td><input type="text" name="department" id="department" ngModel></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td><b>Personal-Nr.</b></td>
+                <td><input type="text" name="personalNumber" id="personalNumber" ngModel></td>
+            </tr>
+        </table>
+
+        <br><br>
+        <b>Problem/Schwachstelle: Was ist das Problem oder wie zeigt sich das Problem?</b><br>
+        <textarea style="height:100px; width:530px;" name="problemDescription" id="problemDescription" ngModel></textarea>
+
+        <br><br>
+        <b>Ursachen/Problemanalyse: Wie entsteht das Problem?</b><br/>
+        <textarea style="height:100px; width:530px;" name="problemSource" id="problemSource" ngModel></textarea>
+
+        <br><br>
+        <b>Verbesserungsvorschlag/L&ouml;sungsweg: Wie kann das Problem gl&ouml;st werden? Daten/Fakten</b><br/>
+        <textarea style="height:100px; width:530px;" name="solution" id="solution" ngModel></textarea>
+
+        <br><br>
+        <b>Kalkulation f&uuml;r die Zeit- bzw. Kosteneinsparung (Textform)</b><br/>
+        <textarea style="height:100px; width:530px;" name="effect" id="effect" ngModel></textarea>
+
+        <br><br>
+        <b>Wer kann bei der Umsetzung der L&ouml;sung helfen?</b><br/>
+        <textarea style="height:100px; width:530px;" name="whocanhelp" id="whocanhelp" ngModel></textarea>
+
+        <br><br>
+        <b>Vorteile bei der Umsetzung meines Vorschlags</b><br/>
+        <textarea style="height:100px; width:530px;" name="advantage" id="advantage" ngModel></textarea>
+
+        <br><br><br>
+
+        <table border="0" style="width:550px;">
+            <tr>
+                <td colspan="2"><b>Pr&uuml;fung der Patentw&uuml;rdigkeit</b> (bei Ja muss das Formular zur Patenpr&uuml;fung mit angeh&auml;ngt
+                    werden, das Formular k&ouml;nnen Sie <a href="">hier herunterladen</a>)<br></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="patent" id="patent" ngModel> Ja</td>
+                <td><input type="checkbox"> Nein</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <br><b>Gruppenvorschlag</b>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="group" id="group" ngModel> Ja
+                </td>
+                <td>
+                    <input type="checkbox"> Nein
+                </td>
+            </tr>
+        </table>
+
+        <br/>
+        <b>Falls ein Gruppenvorschlag vorliegt: Bitte nennen Sie die Namen aller beteiligten Kolleginnen und Kollegen</b>
+        <br/>
+        <textarea style="height:100px; width:530px;" name="groupPersons" id="groupPersons" ngModel></textarea>
+
+        <br><br><b>Dateien</b>
+        <br>
+
+        <input type="file" files-input ng-model="fileList" multiple>
+        
+        <br>       
+
+        <!--
+            <table border="0" style="width:550px;">
+                <tr>
+                    <td><input type="checkbox"> <a href="">Testdate_1.docx</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> <a href="">Testdate_2.xlsx</a></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> <a href="">Testdate_3.pdf</a></td>
+                </tr>
+            </table>
+
+            <span style="font-weight:normal;">
+                Hinweis: Um einen Dateianhang zu
+                            entfernen markieren Sie diesen mit dem H&auml;kchen und klicken Sie 
+                            anschlie&szlig;end auf "L&ouml;schen"
+            </span>
+            <br><br>
+            <input type="submit" class="button" value="Datei hinzuf&uuml;gen"> <input type="submit" class="button"
+                            value="Datei entfernen"><br><br>
+            -->
+
+        <input type="submit" class="button" value="Formular senden">
     </form>
 </div>

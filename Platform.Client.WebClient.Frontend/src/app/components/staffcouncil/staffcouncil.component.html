@@ -1,0 +1,68 @@
+<div id="inhalt" style="font-family: 'Open Sans', sans-serif; width: 600px; margin:0px;">
+    <form #thisForm="ngForm" (ngSubmit)="onSubmit(thisForm)">
+        <table border="0" style="width:550px;">
+            <tr>
+                <td style="width:80px;"><b>Datum</b></td>
+                <td><input type="text" id="date" name="date" ngModel></td>
+                <td><b>Name</b></td>
+                <td><input type="text" id="name" name="name" ngModel></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td><b>Abteilung</b></td>
+                <td><input type="text" id="department" name="department" ngModel></td>
+            </tr>
+        </table>
+
+        <table border="0" style="width:550px;">
+            <tr>
+                <td colspan="4"><b>Meine Nachricht befasst sich mit einer</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" id="complaint" name="complaint" ngModel> Beschwerde</td>
+                <td colspan="2"><input type="checkbox" id="question" name="question" ngModel> allgemeine Frage</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" id="businessmeeting" name="businessmeeting" ngModel> Wortmeldung zur Betriebsversammlung</td>
+                <td colspan="2">&nbsp;</td>
+            </tr>
+        </table>
+        <br>
+        <b>Meine Nachricht *</b><br/>
+        <textarea style="height:100px; width:530px;" class="textfeldmehrzeilig_gross" id="message" name="message" ngModel></textarea>
+        <br><br>
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" id="BetrVG" name="BetrVG" ngModel> Ich bitte, meiner Beschwerde gem&auml;&szlig;
+                    &sect;14 BetrVG abzuhelfen.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="clarification" name="clarification" ngModel> Ich bitte um Kl&auml;rung dieser
+                    allgemeinen Frage.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="discussatbusinessmeeting" name="discussatbusinessmeeting" ngModel> Ich bitte
+                    um Vortrag meiner Wortmeldung in der kommenden Betriebsversammlung.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="secret" name="secret" ngModel> Ich m&ouml;chte, dass Stillschweigen &uuml;ber
+                    die Herkunft und Namen des Einreichers bewahrt wird.
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <input type="submit" class="button">
+    </form>
+    <br><br>
+    <p>
+        *) Bitte nicht mehr als ca. 500 Worte
+    </p>
+</div>

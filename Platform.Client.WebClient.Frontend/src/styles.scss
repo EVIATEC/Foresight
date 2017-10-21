@@ -1,2 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.textfeldeinzeilig {
+	width: 300px;
+
+}
+
+.textfeldmehrzeilig_gross {
+	width: 550px;
+    height: 250px;
+}
+
+.button {
+	background-color: #003388; /* Hintergrundfarbe */
+    color: #FFFFFF; /* Textfarbe */
+    border: none; /* Rahmen */
+    padding: 10px; /* Innenabstand */
+    text-align: center; /* Ausrichtung Text */
+    font-size: 16px; /* SchriftgrÃ¶ÃŸe */
+}
+
+td {
+	height: 21px;
+}

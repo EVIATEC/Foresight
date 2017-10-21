@@ -45,6 +45,9 @@ namespace Platform.Services.ContentService
 
             var connection = Configuration.GetConnectionString("DataAccessPostgreSqlProvider");
             services.AddDbContext<WebAPIDataContext>(options => options.UseNpgsql(connection));
+
+            // Make ServiceSettings accessable
+            services.Configure<Platform.Services.ContentService.ServiceSettings>(Configuration.GetSection("ServiceSettings"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

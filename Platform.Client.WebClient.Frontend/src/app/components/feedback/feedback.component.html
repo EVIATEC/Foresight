@@ -1,19 +1,22 @@
-<div style="padding: 5px;">
-<h1>Feedback</h1>
-Nachfolgend können Sie uns anonym ihr Feedback mitteilen.
-<br /><br />
-<form>
-    <div class="form-group">
-        <label for="topic">Thema</label>
-        <input type="text" class="form-control" name="topic" />
-    </div>
-    <div  class="form-group">
-        <label for="comment">Beschreibung</label><br/>
-        <textarea name="comment" id="comment" rows="10" style="width: 100%;"></textarea>
-    </div>
+<div id="inhalt" style="font-family: 'Open Sans', sans-serif; width:600px; margin:0px;">
     
-    <div class="form-group">    
-        <button type="submit">Absenden</button>
-    </div>
-</form>
+        <form #thisForm="ngForm" (ngSubmit)="onSubmit(thisForm)">
+            <b>Bitte geben Sie Ihren Namen an</b><br/>
+            <input type="text" class="textfeldeinzeilig" name="name" id="name" ngModel/>
+            <br><br>
+            <b>Bitte geben Sie Ihre EMail-Adresse an</b><br/>
+            <input type="text" class="textfeldeinzeilig" name="email" id="email" ngModel/>
+            <br><br>
+            <b>Thema *</b><br/>
+            <input type="text" class="textfeldeinzeilig" name="topic" id="topic" ngModel/>
+            <br><br>
+            <b>Frage/Feedback **</b><br/>
+            <textarea name="comment" id="comment" cols="40" rows="5" class="textfeldmehrzeilig_gross" ngModel></textarea>
+            <br><br>
+            <input type="submit" class="button">
+        </form>
+        <br><br>
+        *) Bitte geben Sie eine kurze Themenangabe in wenigen Worten an
+        <br>
+        **) Bitte nicht mehr als ca. 500 Worte
 </div>
